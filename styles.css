@@ -15,9 +15,6 @@ body {
 }
 
 button {
-  box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
-  -webkit-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
-  -moz-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
   background-color: transparent;
   border: 2px solid;
   border-radius: 10px;
@@ -59,6 +56,9 @@ button:focus {
   transition-duration: .4s;
   transform: translateY(-5px);
   color: tomato;
+  box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
+  -webkit-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
+  -moz-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
 }
 
 
