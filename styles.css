@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
+  -webkit-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
+  -moz-box-shadow: -11px 17px 13px -5px rgba(245,30,30,0.75);
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 1.2rem 2.8rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+button:focus {
+  outline: 0;
+}
+
+.btn-larnU {
+  border-color: crimson;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: crimson;
+}
+.btn-larnU::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: -1;
+  transition: width 0.2s ease-in-out;
+}
+.btn-larnU:hover::after {
+  width: 110%;
+}
+
+.btn-larnU:hover {
+  transition-duration: .4s;
+  transform: translateY(-5px);
+  color: tomato;
+}
+
+
